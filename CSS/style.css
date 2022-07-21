@@ -1,3 +1,15 @@
+.nav-custom{
+  height: calc(100vh - (100vh - 45px));
+  background:linear-gradient(lightgray,gray);
+}
+
 .about-me{
-  background-color: blue
+  border-bottom-style: solid;
+  height: calc(100vh - (100vh - 310px));
+  border-color: blue;
+  border-width: 1px;
+}
+
+.avatar{
+  width: 25% !important ;
 }
