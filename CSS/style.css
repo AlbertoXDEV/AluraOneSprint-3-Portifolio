@@ -11,5 +11,10 @@
 }
 
 .avatar{
-  width: 25% !important ;
+  width: 25ch !important ;
+}
+
+.avatar img {
+  border-radius: 50%;
+  max-width: 100%;
 }
