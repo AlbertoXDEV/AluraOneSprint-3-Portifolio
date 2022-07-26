@@ -32,5 +32,10 @@
 }
 
 .form{
-  
+
+}
+
+.form-submit:disabled{
+  opacity: 50%;
+  background-color: darkblue;
 }

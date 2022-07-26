@@ -13,13 +13,13 @@
 
   <main>
     <nav class=" nav-custom">
-      <a href="#1">Quem sou</a>
+      <a href="#introduction">Quem sou</a>
       <a href="#2"></a>
       <a href="#3"></a>
       <a href="#4"></a>
-      <a href="#5">Contato</a>
+      <a href="#contact-form">Contato</a>
     </nav>
-    <section class="about-me" id="1">
+    <section class="about-me" id="introduction">
       <p class="">Meu nome é Alberto blablablablablablablablablablablablablablablabla
         blablablablablablablablablablablablablablablablablablablablablablabla
         blablablablablablablablablablablablablablablablablabla.</p>
@@ -44,17 +44,17 @@
       <!-- WELCOME TO LIMBO -->
     </section>
 
-    <section class="form" id="5">
+    <section class="form" id="contact-form">
       <form class="" action="index.html" method="post">
         <label for="name_input">Digite o seu nome para contato</label>
-        <input type="text" name="name_input">
+        <input type="text" name="name_input" id="form_name">
         <label for="email_input">Digite seu email</label>
-        <input type="text" name="email_input" value="">
+        <input type="text" name="email_input" value="" id="form_email">
         <label for="email_head">Qual o assunto da mensagem</label>
-        <input type="text" name="email_head" value="">
+        <input type="text" name="email_head" value="" id="form_msg_head">
         <label for="email_body">Digite aqua sua mensagem</label>
-        <input type="text" name="email_body" value="">
-        <button type="submit" name="button">Enviar mensagem</button>
+        <input type="text" name="email_body" value="" id="form_msg_body">
+        <button type="submit" name="button" class="form-submit" id="form_submit_btn">Enviar mensagem</button>
       </form>
     </section>
   </main>
