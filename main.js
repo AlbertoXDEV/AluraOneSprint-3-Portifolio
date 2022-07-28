@@ -10,8 +10,10 @@ msg.addEventListener('input',btnUnlock);
 
 btn.addEventListener('mouseover',btnUnlock);
 
-function btnUnlock () {
-
+function btnUnlock (event) {
+  if (event.type=='mouseover') {
+    btn.removeEventListener('mouseover',btnUnlock);
+  }
   let btnOpen = true
 
   if (name.value=="") {
