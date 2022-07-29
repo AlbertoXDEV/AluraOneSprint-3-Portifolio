@@ -14,9 +14,9 @@
   <main>
     <nav class=" nav-custom">
       <a href="#introduction">Quem sou</a>
-      <a href="#2"></a>
+      <a href="#skills">Habilidades e Hobbies</a>
       <a href="#academic">Formações</a>
-      <a href="#4"></a>
+      <a href="#experience">Experiência em programação</a>
       <a href="#contact-form">Contato</a>
     </nav>
     <section class="about-me" id="introduction">
@@ -38,9 +38,13 @@
         Pellentesque sit amet porttitor purus, commodo finibus ante. </p>
     </section>
 
-    <section class="soft" id="2">
+    <section class="soft" id="skills">
       <div class="skill_grid">
-
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
       </div>
     </section>
 
@@ -54,8 +58,23 @@
       </div>
     </section>
 
-    <section class="void" id="4">
-      <!-- WELCOME TO LIMBO -->
+    <section class="previous" id="experience">
+      <div class="exp_iframe">
+        Decodificador simples:
+        <!--<img src="" alt="">-->
+        <div class="hidden" id="crypto_frame">
+          <iframe height="400px" width="800px" src="https://albertoxdev.github.io/AluraONEsprint1-SimpleEncrypt/"></iframe>
+        </div>
+        <button id="c_frame_btn">Live demo</button>
+      </div>
+      <div class="exp_iframe">
+        Jogo da forca:
+        <!--<img src="" alt="">-->
+        <div class="hidden" id="hangman_frame">
+          <iframe height="675px" width="800px" src="https://albertoxdev.github.io/AluraONEsprint-2-Hangman/"></iframe>
+        </div>
+        <button id="h_frame_btn">Live demo</button>
+      </div>
     </section>
 
     <section class="form" id="contact-form">
@@ -77,6 +96,7 @@
 
   </footer>
 
-  <script src="main.js"></script>
+  <script src="validate.js"></script>
+  <script src="frameHandler.js"></script>
 
 </html>
