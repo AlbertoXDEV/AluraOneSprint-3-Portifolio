@@ -12,13 +12,16 @@
   </head>
 
   <main>
-    <nav class=" nav-custom">
-      <a href="#introduction">Quem sou</a>
-      <a href="#skills">Habilidades e Hobbies</a>
-      <a href="#academic">Formações</a>
-      <a href="#experience">Experiência em programação</a>
-      <a href="#contact-form">Contato</a>
-    </nav>
+    <header>
+      <nav class="nav-custom">
+        <a href="#introduction">Quem sou</a>
+        <a href="#skills">Habilidades e Hobbies</a>
+        <a href="#academic">Formações</a>
+        <a href="#experience">Experiência em programação</a>
+        <a href="#contact-form">Contato</a>
+      </nav>
+  </header>
+
     <section class="about-me" id="introduction">
         <img src="Resources/Place-holder.png" class="avatar" alt="PH">
       <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet efficitur mauris.
@@ -77,8 +80,8 @@
       </div>
     </section>
 
-    <section class="form" id="contact-form">
-      <form class="" action="index.html" method="post">
+    <section class="contact" id="contact-form">
+      <form class="form" action="index.html" method="post">
         <label for="name_input">Digite o seu nome para contato</label>
         <input type="text" name="name_input" id="form_name">
         <label for="email_input">Digite seu email</label>
@@ -86,14 +89,15 @@
         <label for="email_head">Qual o assunto da mensagem</label>
         <input type="text" name="email_head" value="" id="form_msg_head">
         <label for="email_body">Digite aqua sua mensagem</label>
-        <input type="text" name="email_body" value="" id="form_msg_body">
+        <textarea maxlength="300" name="email_body" id="form_msg_body" class="msg-text"></textarea>
         <button type="submit" name="button" class="form-submit" id="form_submit_btn">Enviar mensagem</button>
       </form>
     </section>
   </main>
 
   <footer>
-
+    <p>Copyright&copy; Alberto.S.S.Theodoro 2022</p>
+  	<a href="https://github.com/AlbertoXDEV"><img src="imgs/GitHub-Mark-32px.png" alt="GitHub"></a>
   </footer>
 
   <script src="validate.js"></script>

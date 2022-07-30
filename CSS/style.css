@@ -81,8 +81,22 @@ body{
   text-align: center;
 }
 
-.form{
+.contact{
+  min-height: 400px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
+.form{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2fr 1fr 1.5fr 1fr 2fr 1fr 5fr 1fr;
+  grid-gap: 15px;
+  text-align: center;
+}
+
+.msg-text{
+  resize: none;
 }
 
 .form-submit:disabled{
