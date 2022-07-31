@@ -13,6 +13,7 @@
 
   <main>
     <header>
+      <h1></h1>
       <nav class="nav-custom">
         <a href="#introduction">Quem sou</a>
         <a href="#skills">Habilidades e Hobbies</a>
@@ -20,10 +21,11 @@
         <a href="#experience">Experiência em programação</a>
         <a href="#contact-form">Contato</a>
       </nav>
-  </header>
+    </header>
 
     <section class="about-me" id="introduction">
-        <img src="Resources/Place-holder.png" class="avatar" alt="PH">
+      <img src="Resources/Place-holder.png" class="avatar" alt="PH">
+
       <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet efficitur mauris.
         Donec euismod sodales tellus in rutrum. Vestibulum quis eleifend arcu. In a mi dictum, gravida enim id, dictum nisl.
         In elit libero, efficitur vel turpis et, aliquam facilisis purus. Donec facilisis laoreet sagittis.
@@ -43,16 +45,16 @@
 
     <section class="soft" id="skills">
       <div class="skill_grid">
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
       </div>
     </section>
 
     <section class="self-referential" id="academic">
-      <p>Certificados e formação academica</p>
+      <h2 class="h2">Certificados e formação academica</h2>
       <div class="courses_flex">
         <div class="certificates" id="alura_logica_programação">
           <img src="Resources/Place-holder.png" alt="PH">
@@ -62,25 +64,30 @@
     </section>
 
     <section class="previous" id="experience">
+      <h2 class="h2">Experiência prévia em programação:</h2>
       <div class="exp_iframe">
-        Decodificador simples:
-        <!--<img src="" alt="">-->
+        <h3>Decodificador simples:</h3>
+        <img src="Resources/decypher.png" alt="Decodificador" id="cypherPNG">
         <div class="hidden" id="crypto_frame">
           <iframe height="400px" width="800px" src="https://albertoxdev.github.io/AluraONEsprint1-SimpleEncrypt/"></iframe>
         </div>
+        <br>
         <button id="c_frame_btn">Live demo</button>
       </div>
+
       <div class="exp_iframe">
-        Jogo da forca:
-        <!--<img src="" alt="">-->
+        <h3>Jogo da forca:</h3>
+        <img src="Resources/hangman.png" alt="Jogo da forca" id="hangmanPNG">
         <div class="hidden" id="hangman_frame">
           <iframe height="675px" width="800px" src="https://albertoxdev.github.io/AluraONEsprint-2-Hangman/"></iframe>
         </div>
+        <br>
         <button id="h_frame_btn">Live demo</button>
       </div>
     </section>
 
     <section class="contact" id="contact-form">
+      <h2 class="h2">Se quiser entrar em contato evie uma mensagem usando o campo abaixo</h2>
       <form class="form" action="index.html" method="post">
         <label for="name_input">Digite o seu nome para contato</label>
         <input type="text" name="name_input" id="form_name">
@@ -88,16 +95,16 @@
         <input type="text" name="email_input" value="" id="form_email">
         <label for="email_head">Qual o assunto da mensagem</label>
         <input type="text" name="email_head" value="" id="form_msg_head">
-        <label for="email_body">Digite aqua sua mensagem</label>
+        <label for="email_body">Digite aqui sua mensagem</label>
         <textarea maxlength="300" name="email_body" id="form_msg_body" class="msg-text"></textarea>
         <button type="submit" name="button" class="form-submit" id="form_submit_btn">Enviar mensagem</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>Copyright&copy; Alberto.S.S.Theodoro 2022</p>
-  	<a href="https://github.com/AlbertoXDEV"><img src="imgs/GitHub-Mark-32px.png" alt="GitHub"></a>
+  	<a href="https://github.com/AlbertoXDEV"><img src="Resources/GitHub-Mark-32px.png" alt="GitHub"></a>
   </footer>
 
   <script src="validate.js"></script>

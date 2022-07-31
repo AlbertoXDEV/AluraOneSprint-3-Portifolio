@@ -4,6 +4,8 @@ const crptFrameBnt = document.getElementById('c_frame_btn');
 crptFrameBnt.addEventListener('click',function () {
   let iframe = document.getElementById('crypto_frame');
   iframe.classList.remove('hidden');
+  let img = document.getElementById('cypherPNG')
+  img.classList.add('hidden');
   if (toggleFrame[0]==0) {
     crptFrameBnt.textContent = 'fechar Live Demo';
     toggleFrame[0] = 1;
@@ -11,6 +13,7 @@ crptFrameBnt.addEventListener('click',function () {
     crptFrameBnt.textContent = 'Live Demo';
     toggleFrame[0] = 0;
     iframe.classList.add('hidden');
+    img.classList.remove('hidden');
   }
 });
 
@@ -18,6 +21,8 @@ const hangFrameBnt = document.getElementById('h_frame_btn');
 hangFrameBnt.addEventListener('click',function () {
   let iframe = document.getElementById('hangman_frame');
   iframe.classList.remove('hidden');
+  let img = document.getElementById('hangmanPNG')
+  img.classList.add('hidden');
   if (toggleFrame[1]==0) {
     hangFrameBnt.textContent = 'fechar Live Demo';
     toggleFrame[1] = 1;
@@ -25,5 +30,6 @@ hangFrameBnt.addEventListener('click',function () {
     hangFrameBnt.textContent = 'Live Demo';
     toggleFrame[1] = 0;
     iframe.classList.add('hidden');
+    img.classList.remove('hidden');
   }
 });
